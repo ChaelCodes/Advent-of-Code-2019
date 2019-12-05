@@ -2,12 +2,12 @@ CRACK = :split_int
 
 def deliver(input, puzzle)
   input.map!(&:to_i)
-  if puzzle == 1
+  if puzzle == '1'
     input.map! { |mass| calculate_fuel(mass) }
   else
     input.map! { |mass| total_fuel(mass) }
   end
-  # input.sum
+  input.sum
 end
 
 def calculate_fuel(mass)
