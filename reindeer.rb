@@ -10,3 +10,4 @@ input = Nutcracker.send(CRACK, file)
 present = deliver(input, puzzle)
 
 print present
+print "\n"
